@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desain Web - Abdi Guna Setiawan</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <style>
+      body.debug * {
+        outline: 1px solid red;
+      }
+
+      th,
+      td {
+        padding-inline: 8px;
+        font-weight: 700;
+      }
+    </style>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-inter py-8">
+    <div class="container mx-auto px-4">
+      <table class="text-slate-800">
+        <tr>
+          <td>Nama</td>
+          <td>:</td>
+          <td>Abdi Guna Setiawan</td>
+        </tr>
+        <tr>
+          <td>NPM</td>
+          <td>:</td>
+          <td>23441001</td>
+        </tr>
+        <tr>
+          <td>Program Studi</td>
+          <td>:</td>
+          <td>Sistem Informasi</td>
+        </tr>
+        <tr>
+          <td>Kelas</td>
+          <td>:</td>
+          <td>A (Pagi)</td>
+        </tr>
+      </table>
+
+      <hr class="mt-4 mb-6" />
+
+      <div class="flex gap-6 flex-col md:flex-row">
+        <div class="p-4 shadow-md rounded-lg md:w-42">
+          <h3 class="font-bold text-slate-700">Pertemuan 1</h3>
+          <span class="text-xs font-medium text-slate-600">Kamis, 29 Februari 2024</span>
+          <hr class="mt-2 mb-4" />
+          <ol>
+            <li><a class="transition underline text-sm text-gray-600 hover:text-gray-950" href="pertemuan1/latheading.html">latheading.html</a></li>
+            <li><a class="transition underline text-sm text-gray-600 hover:text-gray-950" href="pertemuan1/latparagraf.html">latparagraf.html</a></li>
+            <li><a class="transition underline text-sm text-gray-600 hover:text-gray-950" href="pertemuan1/lattulisan.html">lattulisan.html</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascipt -->
+    <script>
+      window.addEventListener('keyup', e => {
+        if (e.key == 'a') {
+          document.body.classList.toggle('debug');
+        }
+      });
+
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
