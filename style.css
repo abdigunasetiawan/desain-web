@@ -20,10 +20,14 @@ a#backToHome {
   font-family: Inter, Arial, sans-serif;
 }
 
-a#backToHome:is(:hover, :focus) {
+a#backToHome:focus {
   background-color: #475569;
   outline: 2px solid #64748b;
   outline-offset: 1px;
+}
+
+a#backToHome:hover {
+  background-color: #475569;
 }
 
 a#backToHome span {
