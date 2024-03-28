@@ -1,0 +1,85 @@
+body * {
+  font-family: Inter, sans-serif;
+}
+
+body.debug * {
+  outline: 1px solid red;
+}
+
+th,
+td {
+  padding-inline: 8px;
+  font-weight: 700;
+}
+
+.heading {
+  /* background: -webkit-linear-gradient(#a5fecb, #20bdff, #5433ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* background: #0052d4;
+  background: linear-gradient(to right, #0052d4 0%, #4364f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  background: #f64f59;
+  background: linear-gradient(to right, #f64f59 0%, #c471ed 50%, #12c2e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#onboarding.open {
+  animation: open 1s forwards;
+}
+
+#loading {
+  animation: fadeOut 1s 5s forwards;
+}
+
+#inner-loader {
+  animation: loader 5s ease-in-out forwards;
+}
+
+#welcome {
+  opacity: 0;
+  animation: fadeIn 3s 6s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes open {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
