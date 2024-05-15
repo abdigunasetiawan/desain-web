@@ -8,13 +8,435 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="dist/css/style.css" />
   </head>
-  <body></body>
+  <body class="bg-slate-50">
+    <!-- header -->
+    <header class="fixed z-50 flex w-full items-center gap-2 bg-white px-6 py-4 shadow-[0_1px_2px_0_rgba(0,0,0,.05)]">
+      <img class="h-8" src="assets/img/kaputama.png" alt="" />
+      <a class="text-2xl font-bold text-slate-700" href="">Desain Web</a>
+    </header>
+    <div class="flex">
+      <!-- sidebar -->
+      <nav class="sidebar h-screen bg-white px-4 pt-16 shadow-md">
+        <h1 class="sidebar__heading">Menu</h1>
+
+        <ul class="sidebar__links-wrapper">
+          <li class="dropdown open active">
+            <a href="./pages/main.html" id="sidebar-link" class="home dropdown__header" data-destination="home" target="main">
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-home">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown__header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-code">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4" />
+                <path d="M20 21l2 -2l-2 -2" />
+                <path d="M17 17l-2 2l2 2" />
+              </svg>
+              <span>Pertemuan 1</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="dropdown__body">
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan1/latheading.html" class="dropdown__link" data-destination="latheading" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latheading.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan1/latparagraf.html" class="dropdown__link" data-destination="latparagraf" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latparagraf.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan1/lattulisan.html" class="dropdown__link" data-destination="lattulisan" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>lattulisan.html</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown__header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-code">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4" />
+                <path d="M20 21l2 -2l-2 -2" />
+                <path d="M17 17l-2 2l2 2" />
+              </svg>
+              <span>Pertemuan 2</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="dropdown__body">
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan2/latfont.html" class="dropdown__link" data-destination="latfont" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latfont.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan2/latlink.html" class="dropdown__link" data-destination="latlink" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latlink.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan2/latpenomoran.html" class="dropdown__link" data-destination="latpenomoran" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latpenomoran.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan2/latgambar.html" class="dropdown__link" data-destination="latgambar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latgambar.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan2/latlinkdangambar.html" class="dropdown__link" data-destination="latlinkdangambar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latlinkdangambar.html</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown__header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-code">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4" />
+                <path d="M20 21l2 -2l-2 -2" />
+                <path d="M17 17l-2 2l2 2" />
+              </svg>
+              <span>Pertemuan 3</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="dropdown__body">
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan3/judul.html" class="dropdown__link" data-destination="judul" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>judul.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan3/menu.html" class="dropdown__link" data-destination="menu" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>menu.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan3/latframe.html" class="dropdown__link" data-destination="latframe" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latframe.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan3/lattable.html" class="dropdown__link" data-destination="lattable" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>lattable.html</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown__header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-code">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4" />
+                <path d="M20 21l2 -2l-2 -2" />
+                <path d="M17 17l-2 2l2 2" />
+              </svg>
+              <span>Pertemuan 4</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="dropdown__body">
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan4/latform.html" class="dropdown__link" data-destination="latform" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latform.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan4/daftar.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>daftar.html</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown__header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-code">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4" />
+                <path d="M20 21l2 -2l-2 -2" />
+                <path d="M17 17l-2 2l2 2" />
+              </svg>
+              <span>Pertemuan 5</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="dropdown__body">
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan5/depan.html" class="dropdown__link" data-destination="latform" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>depan.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan5/judul.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>judul.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan5/menu.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>menu.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan5/frame.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>frame.html</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown__header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-code">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 19h-6a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v4" />
+                <path d="M20 21l2 -2l-2 -2" />
+                <path d="M17 17l-2 2l2 2" />
+              </svg>
+              <span>Pertemuan 6</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <ul class="dropdown__body">
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan6/latexternal.html" class="dropdown__link" data-destination="latform" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latexternal.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan6/latselector.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latselector.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan6/latselectorbebas.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latselectorbebas.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan6/latselectorclass.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latselectorclass.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan6/latselectorid.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latselectorid.html</span>
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a id="sidebar-link" href="./pages/pertemuan6/latfhalaman.html" class="dropdown__link" data-destination="daftar" target="main">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-code">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M10 13l-1 2l1 2" />
+                    <path d="M14 13l1 2l-1 2" />
+                  </svg>
+                  <span>latfhalaman.html</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- main -->
+      <iframe class="main mt-16 h-screen w-full" src="pages/main.html" frameborder="0" name="main"></iframe>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,3 +1,159 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body.debug * {
+  outline: 1px solid red;
+}
+
+.xr {
+  outline: 1px solid red;
+}
+
+.main {
+  height: calc(100vh - 64px);
+}
+
+.main::-webkit-scrollbar {
+  width: 12px;
+  padding: 16px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  background-clip: border-box;
+  border-radius: 12px;
+}
+
+.sidebar__heading {
+  font-weight: bold;
+  color: #475569;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.sidebar__links-wrapper {
+  margin-top: 8px;
+  display: flex;
+  max-height: 80vh;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: scroll;
+  padding-right: 8px;
+}
+
+.sidebar__links-wrapper::-webkit-scrollbar {
+  width: 8px;
+  padding: 16px;
+}
+
+.sidebar__links-wrapper::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  background-clip: border-box;
+  border-radius: 12px;
+}
+
+.dropdown__header {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.dropdown.active .dropdown__header {
+  background-color: #0f172a;
+}
+
+.dropdown.active .dropdown__header svg {
+  stroke: #f8fafc;
+}
+
+.dropdown.active .dropdown__header span {
+  color: #f8fafc;
+}
+
+.dropdown__header:hover {
+  background-color: #0f172a;
+}
+
+.dropdown__header:hover svg {
+  stroke: #f8fafc;
+}
+
+.dropdown__header:hover span {
+  color: #f8fafc;
+}
+
+.dropdown__header svg {
+  stroke: #64748b;
+}
+
+.dropdown__header span {
+  text-wrap: nowrap;
+  font-weight: bold;
+  color: #64748b;
+}
+
+.dropdown__body {
+  margin-top: 0;
+  display: flex;
+  max-height: 0;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+  transition:
+    max-height 300ms,
+    margin-top 300ms;
+}
+
+.dropdown.open .dropdown__body {
+  max-height: 300px;
+  margin-top: 8px;
+  transition:
+    max-height 300ms,
+    margin-top 300ms;
+}
+
+.dropdown__link.active {
+  background-color: #374151;
+}
+
+.dropdown__link.active svg {
+  stroke: #f8fafc;
+}
+
+.dropdown__link.active span {
+  color: #f8fafc;
+}
+
+.dropdown__item:hover a {
+  background-color: #374151;
+}
+
+.dropdown__item:hover svg {
+  stroke: #f8fafc;
+}
+
+.dropdown__item:hover span {
+  color: #f8fafc;
+}
+
+.dropdown__item a {
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+  padding-inline: 20px 10px;
+  padding-block: 12px;
+  text-decoration: none;
+}
+
+.dropdown__item svg {
+  stroke: #475569;
+}
+
+.dropdown__item span {
+  color: #475569;
+}

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="daftar.css" />
+    <link rel="stylesheet" href="../navigator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Data Diri</h1>
+
+      <form action="post">
+        <div class="form__group-wrapper">
+          <div class="form__group form__group--nik">
+            <label for="nik">NIK : *</label>
+            <input type="number" id="nik" />
+          </div>
+          <div class="form__group form__group--nama">
+            <label for="nama">Nama Lengkap : *</label>
+            <input type="text" id="nama" />
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="ttl">Tempat/Tanggal Lahir : *</label>
+            <div class="form__input-wrapper">
+              <input type="text" id="ttl" placeholder="Tempat Lahir" />
+              <input type="date" id="ttl" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Jenis Kelamin : *</label>
+            <div class="form__item-wrapper">
+              <div class="form__item">
+                <input type="radio" name="jenkel" id="laki" />
+                <label for="laki">Laki-laki</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="jenkel" id="perempuan" />
+                <label for="perempuan">Perempuan</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Status : *</label>
+            <div class="form__item-wrapper">
+              <div class="form__item">
+                <input type="radio" name="status" id="menikah" />
+                <label for="menikah">Menikah</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="status" id="belum_menikah" />
+                <label for="belum_menikah">Belum Menikah</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Agama : *</label>
+            <div class="form__item-wrapper">
+              <div class="form__item">
+                <input type="radio" name="agama" id="islam" />
+                <label for="islam">Islam</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="agama" id="protestan" />
+                <label for="protestan">Protestan</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="agama" id="katolik" />
+                <label for="katolik">Katolik</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="agama" id="hindu" />
+                <label for="hindu">Hindu</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="agama" id="budha" />
+                <label for="budha">Budha</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="">Alat Transportasi : </label>
+            <select name="" id="">
+              <option value="">Jalan Kaki</option>
+              <option value="">Sepeda Motor</option>
+              <option value="">Angkutan Umum</option>
+              <option value="">Mobil</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="">Jenis Tinggal : </label>
+            <select name="" id="">
+              <option value="">Bersama orang tua</option>
+              <option value="">Wali</option>
+              <option value="">Kost</option>
+              <option value="">Asrama</option>
+              <option value="">Bersama Saudara</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="">Penerima KPPS : *</label>
+            <select name="" id="">
+              <option value="">Tidak</option>
+              <option value="">Ya</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="">Kewarganegaraan : *</label>
+            <select name="" id="">
+              <option value="">WNI</option>
+              <option value="">WNA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="">Alamat Lengkap<span>(Sesuai KTP)</span> : *</label>
+            <textarea name="" id="" rows="2"></textarea>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper flex">
+          <div class="form__column form__column--left">
+            <div class="form__group">
+              <label for="rtw">RT/RW : </label>
+              <div class="form__input-wrapper">
+                <input type="text" placeholder="RT" id="rtw" />
+                <input type="text" placeholder="RW" id="rtw" />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="kpos">Kode Pos : </label>
+              <input type="number" id="kpos" />
+            </div>
+            <div class="form__group">
+              <label for="dusun">Dusun : </label>
+              <input type="text" id="dusun" />
+            </div>
+            <div class="form__group">
+              <label for="npwp">NPWP : </label>
+              <input type="number" id="npwp" />
+            </div>
+          </div>
+          <div class="form__column form__column--right">
+            <div class="form__group">
+              <label for="jalan">Jalan : </label>
+              <input type="text" id="jalan" />
+            </div>
+            <div class="form__group">
+              <label for="kdesa">Kel/Desa : *</label>
+              <input type="text" id="kdesa" />
+            </div>
+            <div class="form__group">
+              <label for="kecamatan">Kecamatan : *</label>
+              <input type="text" id="kecamatan" />
+            </div>
+            <div class="form__group">
+              <label for="nohp">Telp/Hp : *</label>
+              <input type="number" id="nohp" />
+            </div>
+            <div class="form__group">
+              <label for="email">Email : </label>
+              <input type="email" id="email" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="text">Asal Sekolah : *</label>
+          <input type="text" id="text" />
+        </div>
+
+        <div class="form__group form__group--half">
+          <label for="nisn">NISN : *</label>
+          <input type="number" id="nisn" />
+        </div>
+
+        <div class="form__group form__group--half">
+          <label for="jurusan">Jurusan : *</label>
+          <input type="text" id="jurusan" />
+        </div>
+
+        <div class="form__group form__group--half">
+          <label for="alamat">Alamat : *</label>
+          <textarea name="" id="" cols="30" rows="2"></textarea>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Program Studi : *</label>
+            <div class="form__item-wrapper">
+              <div class="form__item">
+                <input type="radio" name="prodi" id="ti" />
+                <label for="ti">Teknik Informatika (S1)</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="prodi" id="si" />
+                <label for="si">Sistem Informasi (S1)</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="prodi" id="mi" />
+                <label for="mi">Manajemen Informatika (D3)</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="prodi" id="ka" />
+                <label for="ka">Komputerisasi Akuntansi (D3)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Waktu Belajar : *</label>
+            <div class="form__item-wrapper">
+              <div class="form__item">
+                <input type="radio" name="wbelajar" id="pagi" />
+                <label for="pagi">Pagi</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="wbelajar" id="sore" />
+                <label for="sore">Sore</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Pilihan Kelas : *</label>
+            <div class="form__item-wrapper">
+              <div class="form__item">
+                <input type="radio" name="kelas" id="reguler" />
+                <label for="reguler">Reguler</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="kelas" id="karyawan" />
+                <label for="karyawan">Karyawan</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="kelas" id="kip" />
+                <label for="kip">KIP Kuliah</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group form__group--half">
+            <label for="paypal">Password PayPal : *</label>
+            <input type="password" id="paypal" placeholder="Masukkan password akun PayPal anda" />
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group form__group--half">
+            <label for="paypal">Pasfoto <span>(Ukuran 3*4)</span> : *</label>
+            <input type="file" />
+          </div>
+        </div>
+
+        <div class="expand-wrapper">
+          <div class="expand">
+            <div class="expand__header">
+              <h5 class="expand__title">Data Orang Tua</h5>
+              <button class="expand__trigger">Isi Data</button>
+            </div>
+            <div class="expand__body">
+              <div class="form__group form__group--half">
+                <label for="nik_ayah">NIK Ayah : *</label>
+                <input type="number" id="nik_ayah" />
+              </div>
+              <div class="form__group form__group--half">
+                <label for="nama_ayah">Nama Ayah : *</label>
+                <input type="text" id="nama_ayah" />
+              </div>
+              <div class="form__group form__group--half">
+                <label for="nik_ibu">NIK Ibu : *</label>
+                <input type="number" id="nik_ibu" />
+              </div>
+              <div class="form__group form__group--half">
+                <label for="nama_ibu">Nama Ibu : *</label>
+                <input type="text" id="nama_ibu" />
+              </div>
+            </div>
+          </div>
+
+          <div class="expand">
+            <div class="expand__header">
+              <h5 class="expand__title">Data Wali</h5>
+              <button class="expand__trigger">Isi Data</button>
+            </div>
+            <div class="expand__body">
+              <div class="form__group form__group--half">
+                <label for="nik_wali">NIK Wali : *</label>
+                <input type="number" id="nik_wali" />
+              </div>
+              <div class="form__group form__group--half">
+                <label for="nama_wali">Nama Wali : *</label>
+                <input type="text" id="nama_wali" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label for="jenkel">Sumber Informasi Mengenai STMIK Kaputama : *</label>
+            <div class="form__item-wrapper form__item-wrapper--sumber">
+              <div class="form__item">
+                <input type="radio" name="sumber" id="brosur" />
+                <label for="brosur">Brosur/Spanduk/Poster</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="sumber" id="media_masa" />
+                <label for="media_masa">Media Masa</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="sumber" id="teman" />
+                <label for="teman">Teman/Saudara</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="sumber" id="sosmed" />
+                <label for="sosmed">Sosmed</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" name="sumber" id="lain-lain" />
+                <select name="" id="">
+                  <option value="lain">Lain-lain</option>
+                  <option value="guru">Guru</option>
+                  <option value="tetangga">Tetangga</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__item">
+          <input type="checkbox" id="konfirmasi" autocomplete="off" />
+          <label for="konfirmasi">Saya telah memastikan data yang saya isi sudah benar.</label>
+        </div>
+
+        <button type="submit" disabled id="simpan" class="disabled">Simpan</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>Copyright &copy 2024 STMIK Kaputama</p>
+    </footer>
+
+    <script src="daftar.js"></script>
+  </body>
+</html>
