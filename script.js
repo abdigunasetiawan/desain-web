@@ -28,12 +28,12 @@ dropdownsHeader.forEach((dropdownHeader) => {
 // cek device
 window.addEventListener("resize", () => {
   if (window.innerWidth < 1024) {
-    document.body.innerHTML = `<h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Perangkat anda tidak mendukung</h1>`;
+    // document.body.innerHTML = `<h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Perangkat anda tidak mendukung</h1>`;
   }
 });
 
 window.addEventListener("load", () => {
   if (window.innerWidth < 1024) {
-    document.body.innerHTML = `<h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Perangkat anda tidak mendukung</h1>`;
+    // document.body.innerHTML = `<h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Perangkat anda tidak mendukung</h1>`;
   }
 });
