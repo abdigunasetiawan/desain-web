@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Function2 - Menghitung IPK</title>
+  </head>
+  <body>
+    <script>
+      function hitungIPK(tugas, hadir, uts, uas) {
+        const IPK = tugas * 0.1 + hadir * 0.2 + uts * 0.3 + uas * 0.4;
+        alert("IPK Saya : " + IPK);
+      }
+
+      var tugas = prompt("Masukkan Nilai Tugas : ");
+      var hadir = prompt("Masukkan Nilai Kehadiran : ");
+      var uts = prompt("Masukkan Nilai Uts : ");
+      var uas = prompt("Masukkan Nilai Uas : ");
+
+      hitungIPK(tugas, hadir, uts, uas);
+    </script>
+  </body>
+</html>

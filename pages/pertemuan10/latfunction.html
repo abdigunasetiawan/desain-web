@@ -6,13 +6,16 @@
     <title>Latihan Function</title>
   </head>
   <body>
-    <script>
-      function menghitungPersegi(panjang, lebar) {
-        const luas = panjang * lebar;
-        document.write("Luas Persegi = " + luas);
-      }
+    <form method="post">
+      <input type="button" value="Klik" onclick="nilai()" />
+    </form>
 
-      menghitungPersegi(4, 3);
+    <script>
+      function nilai() {
+        var nilai;
+        nilai = prompt("Masukkan Nilai Anda : ");
+        document.write("Nilai Anda Adalah : " + nilai);
+      }
     </script>
   </body>
 </html>

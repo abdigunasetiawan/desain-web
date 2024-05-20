@@ -35,7 +35,7 @@ body.debug * {
 .sidebar__links-wrapper {
   margin-top: 8px;
   display: flex;
-  max-height: 80vh;
+  max-height: 70vh;
   flex-direction: column;
   gap: 8px;
   overflow-y: scroll;
@@ -126,7 +126,7 @@ body.debug * {
 }
 
 .dropdown.open .dropdown__body {
-  max-height: 300px;
+  max-height: 500px;
   margin-top: 8px;
   transition:
     max-height 500ms,
@@ -172,4 +172,14 @@ body.debug * {
 
 .dropdown__item span {
   color: #475569;
+}
+
+.navigator-wrapper button.hide {
+  opacity: 0;
+  transition: opacity 200ms;
+  pointer-events: none;
+}
+
+.navigator-wrapper button {
+  transition: opacity 200ms;
 }

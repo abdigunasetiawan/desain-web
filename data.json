@@ -1,0 +1,142 @@
+[
+  {
+    "title": "latheading.html",
+    "url": "./pages/pertemuan1/latheading.html"
+  },
+  {
+    "title": "latparagraf.html",
+    "url": "./pages/pertemuan1/latparagraf.html"
+  },
+  {
+    "title": "lattulisan.html",
+    "url": "./pages/pertemuan1/lattulisan.html"
+  },
+  {
+    "title": "latfont.html",
+    "url": "./pages/pertemuan2/latfont.html"
+  },
+  {
+    "title": "latlink.html",
+    "url": "./pages/pertemuan2/latlink.html"
+  },
+  {
+    "title": "latpenomoran.html",
+    "url": "./pages/pertemuan2/latpenomoran.html"
+  },
+  {
+    "title": "latgambar.html",
+    "url": "./pages/pertemuan2/latgambar.html"
+  },
+  {
+    "title": "latlinkdangambar.html",
+    "url": "./pages/pertemuan2/latlinkdangambar.html"
+  },
+  {
+    "title": "judul.html",
+    "url": "./pages/pertemuan3/judul.html"
+  },
+  {
+    "title": "menu.html",
+    "url": "./pages/pertemuan3/menu.html"
+  },
+  {
+    "title": "latframe.html",
+    "url": "./pages/pertemuan3/latframe.html"
+  },
+  {
+    "title": "latable.html",
+    "url": "./pages/pertemuan3/latable.html"
+  },
+  {
+    "title": "latform.html",
+    "url": "./pages/pertemuan4/latform.html"
+  },
+  {
+    "title": "daftar.html",
+    "url": "./pages/pertemuan4/daftar.html"
+  },
+  {
+    "title": "depan.html",
+    "url": "./pages/pertemuan5/depan.html"
+  },
+  {
+    "title": "judul.html",
+    "url": "./pages/pertemuan5/judul.html"
+  },
+  {
+    "title": "menu.html",
+    "url": "./pages/pertemuan5/menu.html"
+  },
+  {
+    "title": "frame.html",
+    "url": "./pages/pertemuan5/frame.html"
+  },
+  {
+    "title": "latexternal.html",
+    "url": "./pages/pertemuan6/latexternal.html"
+  },
+  {
+    "title": "latselector.html",
+    "url": "./pages/pertemuan6/latselector.html"
+  },
+  {
+    "title": "latselectorbebas.html",
+    "url": "./pages/pertemuan6/latselectorbebas.html"
+  },
+  {
+    "title": "latselectorclass.html",
+    "url": "./pages/pertemuan6/latselectorclass.html"
+  },
+  {
+    "title": "latselectorid.html",
+    "url": "./pages/pertemuan6/latselectorid.html"
+  },
+  {
+    "title": "latfhalaman.html",
+    "url": "./pages/pertemuan6/latfhalaman.html"
+  },
+  {
+    "title": "latvar.html",
+    "url": "./pages/pertemuan7/latvar.html"
+  },
+  {
+    "title": "latoperator.html",
+    "url": "./pages/pertemuan9/latoperator.html"
+  },
+  {
+    "title": "lat_if.html",
+    "url": "./pages/pertemuan10/lat_if.html"
+  },
+  {
+    "title": "lat_case.html",
+    "url": "./pages/pertemuan10/lat_case.html"
+  },
+  {
+    "title": "latfor.html",
+    "url": "./pages/pertemuan10/latfor.html"
+  },
+  {
+    "title": "latwhile.html",
+    "url": "./pages/pertemuan10/latwhile.html"
+  },
+  {
+    "title": "latfunction.html",
+    "url": "./pages/pertemuan10/latfunction.html"
+  },
+  {
+    "title": "latfunction1.html",
+    "url": "./pages/pertemuan10/latfunction1.html"
+  },
+  {
+    "title": "latobjek.html",
+    "url": "./pages/pertemuan10/latobjek.html"
+  },
+  {
+    "title": "menghitungIPK.html",
+    "url": "./pages/pertemuan10/tugasFunction.html"
+  },
+  {
+    "title": "menghitungLuasPersegi.html",
+    "url": "./pages/pertemuan10/tugasFunction2.html"
+  }
+]
