@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // input jenis kelamin
+      let jenisKelamin = prompt("Masukkan jenis kelamin anda : \nLaki-laki atau Perempuan");
+
+      let tinggiBadan, beratBadan, ipk, pendidikan;
+      let lulusTinggiBadan, lulusBeratBadan, lulusIPK, lulusPendidikan;
+
+      // validasi jenis kelamin
+      if (jenisKelamin == "Laki-laki" || jenisKelamin == "laki" || jenisKelamin == "Perempuan" || jenisKelamin == "perempuan") {
+        tinggiBadan = prompt("Masukkan tinggi badan anda : ");
+        beratBadan = prompt("Masukkan berat badan anda : ");
+        ipk = parseFloat(prompt("Masukkan ipk anda : "));
+        pendidikan = prompt("Masukkan Pendidikan terakhir anda : \nD3 atau S1");
+      } else {
+        alert("Jenis kelamin tidak sesuai");
+      }
+
+      // pengecekkan tinggi badan
+      if (jenisKelamin == "Laki-laki" || jenisKelamin == "laki") {
+        // cek tinggi badan Laki-laki
+        lulusTinggiBadan = tinggiBadan >= 170 && tinggiBadan <= 179;
+      } else if (jenisKelamin == "Perempuan" || jenisKelamin == "perempuan") {
+        // cek tinggi badan Perempuan
+        lulusTinggiBadan = tinggiBadan >= 160 && tinggiBadan <= 170;
+      }
+
+      // cek berat badan
+      lulusBeratBadan = beratBadan >= tinggiBadan - 110;
+
+      // cek ipk
+      lulusIPK = ipk >= 3 && ipk <= 4;
+
+      // cek pendidikan
+      lulusPendidikan = pendidikan == "D3" || pendidikan == "S1";
+
+      // hasil seleksi
+      if (lulusTinggiBadan && lulusBeratBadan && lulusIPK && lulusPendidikan) {
+        document.writeln("<b>ANDA LOLOS SELEKSI 😎</b>");
+      } else {
+        document.writeln("<b>ANDA TIDAK LOLOS SELEKSI 😑</b>");
+      }
+
+      // cetak detail hasil seleksi
+      document.writeln("<p>=======================================</p>");
+      document.writeln(`<p>Jenis kelamin anda : ${jenisKelamin}</p>`);
+      document.writeln(`<p>Tinggi badan anda : ${tinggiBadan}</p>`);
+      document.writeln(`<p>Berat badan anda : ${beratBadan}</p>`);
+      document.writeln(`<p>IPK anda : ${ipk}</p>`);
+      document.writeln(`<p>Pendidikan Terakhir anda : ${pendidikan}</p>`);
+      document.writeln("=======================================</p>");
+      document.writeln(`<p>Lulus Tinggi Badan ${lulusTinggiBadan ? "✅" : "❌"}</p>`);
+      document.writeln(`<p>Lulus Berat Badan ${lulusBeratBadan ? "✅" : "❌"}</p>`);
+      document.writeln(`<p>Lulus IPK ${lulusIPK ? "✅" : "❌"}</p>`);
+      document.writeln(`<p>Lulus Pendidikan ${lulusPendidikan ? "✅" : "❌"}</p>`);
+    </script>
+  </body>
+</html>

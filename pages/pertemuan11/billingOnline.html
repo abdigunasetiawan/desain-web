@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // input detik pemakaian (tagihan internet)
+      let totalDetik = prompt("Masukkan detik pemakaian anda : \n  1 jam = 3600 detik\n  2 jam = 7200 detik \n  5 jam = 18000 detik\n10 jam = 36000 detik");
+      let pulsa = totalDetik / 45;
+      let bayar = pulsa * 30;
+
+      let jam = Math.floor(totalDetik / 3600);
+      let menit = Math.floor((totalDetik % 3600) / 60);
+      let detik = totalDetik % 60;
+
+      document.writeln(`<p>Total detik pemakaian anda : ${totalDetik}</p>`);
+      document.writeln(`<p>Durasi Pemakain : ${jam} jam, ${menit} menit, ${detik} detik</p>`);
+      document.writeln(`<p>Pulsa anda : ${pulsa}</p>`);
+      document.writeln(`<p>Total bayar : ${bayar}</p>`);
+    </script>
+  </body>
+</html>

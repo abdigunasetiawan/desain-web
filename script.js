@@ -181,6 +181,30 @@ const pages = [
     title: "menghitungLuasPersegi.html",
     url: "./pages/pertemuan10/tugasFunction2.html",
   },
+  {
+    title: "konversiNilai.html",
+    url: "./pages/pertemuan11/konversiNilai.html",
+  },
+  {
+    title: "diskon.html",
+    url: "./pages/pertemuan11/diskon.html",
+  },
+  {
+    title: "perhitunganGaji.html",
+    url: "./pages/pertemuan11/perhitunganGaji.html",
+  },
+  {
+    title: "penerimaanPegawai.html",
+    url: "./pages/pertemuan11/penerimaanPegawai.html",
+  },
+  {
+    title: "billingOnline.html",
+    url: "./pages/pertemuan11/billingOnline.html",
+  },
+  {
+    title: "zodiak.html",
+    url: "./pages/pertemuan11/zodiak.html",
+  },
 ];
 
 let pageIndex = -1;

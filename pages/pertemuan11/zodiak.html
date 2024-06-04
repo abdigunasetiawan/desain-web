@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tanggal = parseInt(prompt("Masukkan tangggal : "));
+      let bulan = parseInt(prompt("Masukkan bulan : "));
+
+      if ((bulan === 3 && tanggal >= 21) || (bulan === 4 && tanggal <= 19)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Aries</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Penuh energi, hati-hati terhadap cedera fisik.</li>");
+        document.writeln("<li>Asmara: Bersemangat dan berani dalam cinta, belajar kesabaran.</li>");
+        document.writeln("<li>Keuangan: Suka mengambil risiko, bisa menguntungkan atau merugikan.</li>");
+        document.writeln("<li>Karir: Cocok untuk peran kepemimpinan dan pekerjaan yang membutuhkan inisiatif.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 4 && tanggal >= 20) || (bulan === 5 && tanggal <= 20)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Taurus</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Memiliki stamina yang baik, jaga pola makan dan berat badan.</li>");
+        document.writeln("<li>Asmara: Setia dan mencari stabilitas dalam hubungan, bisa posesif.</li>");
+        document.writeln("<li>Keuangan: Pandai mengelola keuangan, mencari keamanan finansial.</li>");
+        document.writeln("<li>Karir: Cocok dalam bidang yang menawarkan stabilitas dan membutuhkan kesabaran.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 5 && tanggal >= 21) || (bulan === 6 && tanggal <= 20)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Gemini</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Jaga kesehatan mental dan fisik, mudah stres.</li>");
+        document.writeln("<li>Asmara: Komunikatif dan suka variasi, belajar komitmen.</li>");
+        document.writeln("<li>Keuangan: Pintar mencari peluang baru, hati-hati pengeluaran impulsif.</li>");
+        document.writeln("<li>Karir: Cocok dalam bidang komunikasi, media, dan interaksi sosial.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 6 && tanggal >= 21) || (bulan === 7 && tanggal <= 22)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Cancer</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Jaga kesehatan emosional, sensitif.</li>");
+        document.writeln("<li>Asmara: Sangat peduli dan setia, mencari hubungan yang mendalam.</li>");
+        document.writeln("<li>Keuangan: Berhati-hati dalam mengelola keuangan, suka menabung.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang melibatkan perawatan atau dukungan.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 7 && tanggal >= 23) || (bulan === 8 && tanggal <= 22)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Leo</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Vitalitas tinggi, hati-hati terhadap penyakit jantung.</li>");
+        document.writeln("<li>Asmara: Romantis dan penuh gairah, bisa dominan.</li>");
+        document.writeln("<li>Keuangan: Suka kemewahan, bisa boros tetapi mampu menghasilkan uang.</li>");
+        document.writeln("<li>Karir: Cocok dalam peran yang memberikan pengakuan, seperti hiburan atau manajemen.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 8 && tanggal >= 23) || (bulan === 9 && tanggal <= 22)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Virgo</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Menjaga kesehatan dengan baik, hindari stres berlebihan.</li>");
+        document.writeln("<li>Asmara: Analitis dan mencari kesempurnaan, bisa kritis.</li>");
+        document.writeln("<li>Keuangan: Pandai mengelola uang dan cenderung hemat.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang membutuhkan ketelitian dan analisis.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 9 && tanggal >= 23) || (bulan === 10 && tanggal <= 22)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Libra</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Menjaga keseimbangan hidup untuk kesehatan fisik dan mental.</li>");
+        document.writeln("<li>Asmara: Romantis dan mencari harmoni, bisa ragu-ragu.</li>");
+        document.writeln("<li>Keuangan: Hati-hati terhadap pengeluaran untuk barang-barang mewah.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang membutuhkan diplomasi dan estetika.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 10 && tanggal >= 23) || (bulan === 11 && tanggal <= 21)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Scorpio</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Kekuatan fisik baik, jaga kesehatan reproduksi dan mental.</li>");
+        document.writeln("<li>Asmara: Intens dan setia, bisa posesif dan cemburu.</li>");
+        document.writeln("<li>Keuangan: Pandai mengelola uang dan mencari investasi jangka panjang.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang membutuhkan investigasi atau penelitian mendalam.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 11 && tanggal >= 22) || (bulan === 12 && tanggal <= 21)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Sagittarius</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Penuh energi, hati-hati terhadap cedera olahraga.</li>");
+        document.writeln("<li>Asmara: Bebas dan suka petualangan, belajar komitmen.</li>");
+        document.writeln("<li>Keuangan: Optimis dalam keuangan, hati-hati terhadap risiko.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang menawarkan kebebasan dan petualangan.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 12 && tanggal >= 22) || (bulan === 1 && tanggal <= 19)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Capricorn</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Kuat dan tahan lama, jaga kesehatan tulang dan sendi.</li>");
+        document.writeln("<li>Asmara: Serius dan berkomitmen, bisa kaku.</li>");
+        document.writeln("<li>Keuangan: Pandai dalam keuangan dan suka menabung.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang membutuhkan disiplin dan tanggung jawab.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 1 && tanggal >= 20) || (bulan === 2 && tanggal <= 18)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Aquarius</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Jaga kesehatan sirkulasi dan saraf.</li>");
+        document.writeln("<li>Asmara: Mencari hubungan yang unik dan intelektual, bisa tidak konvensional.</li>");
+        document.writeln("<li>Keuangan: Inovatif dalam keuangan, hati-hati terhadap keputusan impulsif.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang membutuhkan kreativitas dan pemikiran inovatif.</li>");
+        document.writeln("</ul>");
+      } else if ((bulan === 2 && tanggal >= 19) || (bulan === 3 && tanggal <= 20)) {
+        document.writeln(`<p>Tanggal : ${tanggal}</p>`);
+        document.writeln(`<p>Bulan : ${bulan}</p>`);
+        document.writeln(`<h1>Pisces</h1>`);
+        document.writeln("<ul>");
+        document.writeln("<li>Kesehatan: Jaga kesehatan mental dan emosional, serta sistem kekebalan tubuh.</li>");
+        document.writeln("<li>Asmara: Romantis dan penuh empati, mudah terluka.</li>");
+        document.writeln("<li>Keuangan: Hati-hati terhadap pengeluaran berlebihan, belajar mengelola uang.</li>");
+        document.writeln("<li>Karir: Cocok dalam pekerjaan yang melibatkan seni atau perawatan.</li>");
+        document.writeln("</ul>");
+      } else {
+        document.writeln("<p>Tanggal atau bulan tidak valid.</p>");
+      }
+    </script>
+  </body>
+</html>

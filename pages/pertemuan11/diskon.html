@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var namaBarang = "Mie Instan";
+      var harga = 1000;
+      var jumlah = 3;
+      var bayar = 2700;
+
+      if (jumlah >= 3) {
+        var diskon = harga * 0.1;
+      } else {
+        diskon = 0;
+      }
+
+      var totalBayar = harga * jumlah - diskon;
+      document.writeln(`<p>Nama barang :  ${namaBarang}</p>`);
+      document.writeln(`<p>Harga barang :  ${harga}</p>`);
+      document.writeln(`<p>Membeli sebanyak :  ${jumlah}</p>`);
+      document.writeln(`<p>Membayar :  ${bayar}</p>`);
+      document.writeln(`Harga total : ${totalBayar}`);
+    </script>
+  </body>
+</html>
